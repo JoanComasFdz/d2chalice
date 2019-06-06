@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#000">
+
+    <title>Destiny 2: Chalice of Opulence Rune Finder</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Kanit:300,400,700" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          <ul class="nav nav-fill nav-tabs" id="menu" role="tablist"> <!-- Tab List -->
+              
+              <li class="nav-item">
+                <a class="nav-link active" id="main-tab" data-toggle="tab" href="#main" role="tab" aria-controls="main" aria-selected="true"><i class="fa fa-main"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="info-tab" data-toggle="tab" href="#info" role="tab" aria-controls="info" aria-selected="true"><i class="fa fa-info"></i></a>
+              </li>
+          </ul> <!-- Tab List -->
+
+          <div class="tab-content" id="tabContent"> <!-- Tab Content -->
+            
+            <div class="tab-pane fade show active" id="main" role="tabpanel" aria-labelledby="main-tab">
+              <div class="row">
+                <div class="col-md-12">
+                  <h1>Loot you want to farm</h1>
+                  <select id="select-item-type">
+                    <option value="armor">Marks, Bonds, Cloaks</option>
+                    <option value="smg">Submachine Gun</option>
+                    <option value="sniper">Sniper Rifle</option>
+                  </select>
+
+                  <!-- The content in this one depends on what has been selected in item type-->
+                  <select id="select-spec"> 
+                    <!-- armor specs -->
+                    <option value="random">Random</option>
+                    <option value="mobility">Mobility</option>
+                    <option value="recovery">Recovery</option>
+                    <option value="resilience">Resilience</option>
+
+                    <!-- weapon specs -->
+                    <option value="excellent">Excellent RPM traits</option>
+                    <option value="high">High RPM traits</option>
+                    <option value="average">Average RPM traits</option>
+                    <option value="low">Low RPM traits	</option>
+                  </select>
+
+                  <!-- The content in this one depends on what has been selected in item type-->
+                  <select id="select-masterwork"> 
+                      <!-- armor specs -->
+                      <option value="random">Random</option>
+                      <option value="arc">Arc Resistance</option>
+                      <option value="solar">Solar Resistance</option>
+                      <option value="void">Void Resistance</option>
+  
+                      <!-- weapon specs -->
+                      <option value="handling">Handling</option>
+                      <option value="reload">Reload</option>
+                      <option value="range">Range</option>
+                      <option value="stability">Stability</option>
+                    </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                    <h1>Runes to apply</h1>
+                    <div id="rune1">
+                      <span>Rune I:</span><span></span>
+                    </div>
+                    <div id="rune2">
+                        <span>Rune II:</span><span></span>
+                    </div>
+                    <div id="rune3">
+                        <span>Rune III:</span><span></span>
+                      </div>
+                </div>
+              </div>
+            </div> <!-- Main Tab -->
+
+            <div class="tab-pane fade" id="info" role="tabpanel" aria-labelledby="info-tab">
+                <p>This is just a little tool to help you farm the loot you want in the Menagerie in Destiny 2.
+                </p>
+                <p>
+                  Choose the item you want to farm form, its specs and its masterwork, and I will tell you which runes to place apply.
+                </p>
+                <!-- <p>
+                  Me and my brother in law have invested some fair ammount of time doing this little tool for the community. If you would like to collaborate with a coffe or a beer, we would appreceiate it :)
+                </p>
+                
+                <span align="center">
+                  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_donations" />
+                    <input type="hidden" name="business" value="AW4P4QRS5UCBN" />
+                    <input type="hidden" name="item_name" value="Me and my brother in law invested a fair amount of time doing this tool, we could use a coffe or a beer :) " />
+                    <input type="hidden" name="currency_code" value="EUR" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/CH/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                    <img alt="" border="0" src="https://www.paypal.com/en_CH/i/scr/pixel.gif" width="1" height="1" />
+                    </form>
+                </span>
+                <span align="center">
+                  <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
+                  <script type='text/javascript'>
+                    kofiwidget2.init('Support Me on Ko-fi', '#46b798', 'C0C2VMHQ');
+                    kofiwidget2.draw();
+                    </script> 
+                </span> -->
+
+                <p>
+                  Also, we'd like to encourage you to visit the links where we got the information from in the Thanks section and directly thanks the user who have been doing the hard work of craking the combos!
+                </p>
+                
+                <h2>Thanks</h2>
+                <p>This is just a tool developed on top of the effort done by the Destiny Community in <a href="https://www.reddit.com/r/DestinyTheGame">/r/DestinyTheGame</a></p>
+                <p>I do not take any credit for the data here shown, I am jsut trying to automate activating the correct terminal.</p>
+                <p>The links I used to create this tool are:</p>
+                <p><a href="https://www.reddit.com/r/DestinyTheGame/comments/bx6itm/spreadsheet_of_all_possible_rune_combinations_and/">Spreadsheet of all possible Rune Combinations and what they reward</a></p>
+                
+                <p>Also, <a href="https://github.com/SonosAranei">Sonos</a> has been godsend with the ciruclar menu and overall help developing this :)</p>
+                <p>And thanks Bungie for doing such incredible game!</p>
+            </div> <!-- Info Tab -->
+            
+          </div> <!-- Tab Content -->
+
+        </div> <!-- root bootstrapp columns 12 -->
+      </div> <!-- root row -->
+    </div> <!-- root div -->
+    
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    <script  src="js/jquery.stickytabs.js"></script>
+    <script  src="js/index.js"></script>
+
+  </body>
+
+</html>
